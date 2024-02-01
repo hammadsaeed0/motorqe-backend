@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const planSchema = new Schema({
   name: {
     type: String,
+    enum: ["silver", "gold", "platinum"],
     required: true,
   },
   price: {

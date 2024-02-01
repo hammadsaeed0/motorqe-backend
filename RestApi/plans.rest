@@ -1,0 +1,17 @@
+
+
+###
+POST {{Host}}/v1/plans/
+Content-Type: application/json
+
+{
+  "name": "",
+  "price": 99,
+  "carLimit": 20,
+  "photoLimit": 50,
+  "featuredAdDuration": 30,
+  "listingDuration": 60,
+  "boosters": 0,
+  "interior360": true,
+  "deleteAfterDays": 90
+}
