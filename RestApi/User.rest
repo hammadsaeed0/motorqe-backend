@@ -1,0 +1,26 @@
+
+
+###
+POST {{Host}}/v1/registerUser
+Content-Type: application/json
+
+{
+"email":"zaigham",
+"phone":"03090962660",
+"password":"112233",
+"type":"dealer",
+"firstName":"Ghulam ",
+"lastName":"Mustafa",
+"tradeLicenseNumber":"4544454",
+}
+
+
+router.route("/registerUser").post(registerUser);
+router.route("/loginUser").post(loginUser);
+router.route("/submitContactForm").post(submitContactForm);
+router.route("/plans").post(createPlan);
+router.route("/plans").get(getAllPlans);
+router.route("/plans/:id").delete(deletePlanById);
+router.route("/plans/:id").put(updatePlanById);
+router.route("/plans/:id").get(getPlanById);
+router.route("/createCar").post(createCarListing);

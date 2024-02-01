@@ -1,0 +1,39 @@
+
+
+
+
+###
+POST {{Host}}/garage/add-appointment
+Content-Type: application/json
+
+{
+  "garageOwnerId": "your-garage-owner-id",
+  "userId": "your-user-id",
+  "carId": "your-car-id",
+  "typeofListing": "features", 
+  "garageName": "Garage Name",
+  "address": "Garage Address",
+  "makeYear": "Car Make Year",
+  "workingDays": "Working Days",
+  "workingHours": "Working Hours",
+  "enginSize": "Engine Size",
+  "pickupDelivery": "Pickup Delivery",
+  "availableDatesFrom": "Available Dates",
+  "about": "About Garage",
+  "location": "Garage Location",
+  "date": "2024-01-30T12:00:00.000Z",
+  "status": "Active", 
+  "servicesAndPrice": [
+    {
+      "category": "Service Category",
+      "services": [
+        {
+          "service": "Service Name",
+          "price": "Service Price"
+        }
+      ]
+    }
+  ]
+}
+###
+GET {{Host}}/garage/get-all-garage

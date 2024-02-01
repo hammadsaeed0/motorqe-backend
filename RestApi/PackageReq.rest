@@ -1,0 +1,34 @@
+
+
+###
+post {{Host}}/v1/packages/package-request
+Content-Type: application/json
+
+{
+   "userId":"65b35d9cc9e58ce383871500",
+   "packageType":"platinum"
+}
+
+#400 bad request , already have a pending request ,
+#package request request submited for approval
+#201 package request updated for ${packagename} package,wait for approval
+
+###
+GET {{Host}}/v1/packages/admin/package-requests
+
+
+###
+GET {{Host}}/v1/packages/admin/package-requestsById/65bb962bd5bab27199c4a9a5
+
+
+###
+PUT {{Host}}/v1/packages/admin/package-requests-aproval/65bb966dd5bab27199c4a9b1
+Content-Type: application/json
+
+{
+  "packageType": "platinum",
+  "approved": true
+}
+
+#status code 200 success true,
+#400 bad request [predescribed package is not found]
