@@ -51,12 +51,10 @@ const userSchema = new Schema({
     enum: ["silver", "platinum", "golden"],
     default: "golden"
   },
-  favorite_listings: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "CarListing",
-    },
-  ],
+  favorite_listings: [{
+    type: Schema.Types.ObjectId,
+    ref: 'CarListing'
+  }],
 });
 
 export const User = mongoose.model("User", userSchema);

@@ -99,6 +99,10 @@ const carListingSchema = new Schema({
     type: [String],
     required: true,
   },
+  favorited_by_users: [{
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }],
 });
 
 export const CarListing = mongoose.model("CarListing", carListingSchema);

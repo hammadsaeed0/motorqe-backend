@@ -1,0 +1,20 @@
+
+###
+POST /v1/admin/addFav/:userId/:carListingId
+Content-Type: application/json
+
+{
+  "userId": "65b35d9cc9e58ce383871500",
+  "carListingId": "5feb3e2cf7e1a93e80c343f2"
+}
+
+
+
+###
+DELETE /v1/admin/removeFav/:userId/:carListingId
+Content-Type: application/json
+
+{
+  "userId": "65b35d9cc9e58ce383871500",
+  "carListingId": "5feb3e2cf7e1a93e80c343f2"
+}

@@ -19,11 +19,11 @@ GET {{Host}}/v1/packages/admin/package-requests
 #200 ok , 500 bad request
 
 ###
-GET {{Host}}/v1/packages/admin/package-requestsById/65bb962bd5bab27199c4a9a5
+GET {{Host}}/v1/packages/admin/package-requestsById/65bbefbb793c04c73d0d3101
 
 
 ###
-PUT {{Host}}/v1/packages/admin/package-requests-aproval/65bb966dd5bab27199c4a9b1
+PUT {{Host}}/v1/packages/admin/package-requests-aproval/65bbefbb793c04c73d0d3101
 Content-Type: application/json
 
 {

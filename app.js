@@ -10,7 +10,9 @@ import ErrorMiddleware from "./middleware/Error.js";
 import bodyParser from "body-parser";
 import cors from "cors";
 import fileupload from "express-fileupload";
-import  garageRoutes from "./routes/GarageRoutes.js";
+import garageRoutes from "./routes/GarageRoutes.js";
+import adminCarListing from './routes/AdminRoutes/CardListings.js'
+import favouritRoutes from './routes/FavouritRoutes.js'
 connectDB();
 // Use Middlewares
 app.use(express.json());
@@ -32,6 +34,8 @@ app.use(
 app.use("/v1", router);
 app.use('/v1/garage',garageRoutes)
 app.use('/v1/packages',packages)
+app.use('/v1/admin',adminCarListing)
+app.use('/v1/users',favouritRoutes)
 app.listen(APP_PORT, () => {
   console.log(`Server is Running ${APP_PORT}`);
 });

@@ -1,0 +1,3 @@
+
+###
+GET {{Host}}/v1/admin/all-cars

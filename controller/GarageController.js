@@ -93,6 +93,14 @@ export const getAllGarages = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
+
+
+
+
+
+
+
+
 // export const uploadImage = async (req, res, next) => {
 //     let images = [];
 //     if (req.files && req.files.avatars) {
